@@ -5,10 +5,11 @@ public abstract class Filtro {
     public Filtro() { }
 
     public abstract IList<Conta> Filtra(IList<Conta> contas);
+
     public IList<Conta> FiltraProximoFiltro(IList<Conta> contas) {
         if(_proximoFiltro != null)
             return _proximoFiltro.Filtra(contas);
         
-        return contas;
+        return new List<Conta>();
     }
 }

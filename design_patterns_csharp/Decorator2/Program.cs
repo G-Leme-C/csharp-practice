@@ -1,7 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
-
-List<Conta> contas = new List<Conta>() {
+﻿List<Conta> contas = new List<Conta>() {
     new Conta(80, DateTime.Now.AddDays(-100)),
     new Conta(1000, DateTime.Now.AddDays(-90)),
     new Conta(10000, DateTime.Now.AddDays(-20)),

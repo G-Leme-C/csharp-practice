@@ -13,6 +13,7 @@ public class FiltroMaiorQue500Mil : Filtro
             contas.Remove(conta);
         }
 
-        return contas;
+        contasFiltradas.AddRange(FiltraProximoFiltro(contas));
+        return contasFiltradas;
     }
 }
